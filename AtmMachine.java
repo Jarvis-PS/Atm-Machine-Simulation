@@ -30,7 +30,7 @@ public class AtmMachine {
                 float amount;
                 System.out.println("Please enter amount to withdraw: ");
                 amount = in .nextFloat();
-                if (amount > balance || amount == 0 || balance < 500) {
+                if (amount > balance || amount == 0 || balance <= 500) {
                     System.out.println("You have insufficient funds\n\n");
                     anotherTransaction(); // ask if they want another transaction
                 } else {
